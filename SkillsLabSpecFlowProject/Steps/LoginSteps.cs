@@ -36,7 +36,7 @@ namespace SkillsLabSpecFlowProject.Features
         public void ThenIShouldSeeUserLoggedInAsAdmin()
         {
             Pages.AdminProfile.ClickCloseSuccessMessage();
-            Assert.IsTrue(Pages.StudentProfile.IsAt());
+            Assert.IsTrue(Pages.AdminProfile.IsAt());
         }
     }
 }

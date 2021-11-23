@@ -11,6 +11,7 @@ namespace SkillsLabSpecFlowProject.Steps
         [Given(@"I click on Create Users")]
         public void GivenIClickOnCreateUsers()
         {
+            Pages.AdminProfile.ClickCloseSuccessMessage();
             Pages.AdminProfile.ClickCreateUsers();
         }
         

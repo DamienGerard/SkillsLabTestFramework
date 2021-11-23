@@ -139,11 +139,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "Email",
                             "DOB"});
                 table2.AddRow(new string[] {
-                            "josh",
-                            "Joshua",
-                            "Flummers",
-                            "josh",
-                            "joshua.flummers@mail.com",
+                            "Huck",
+                            "Huckleberry",
+                            "Finn",
+                            "Huck",
+                            "huck.finn@mail.com",
                             "01/02/2000"});
 #line 17
  testRunner.And("I enter student details", ((string)(null)), table2, "And ");

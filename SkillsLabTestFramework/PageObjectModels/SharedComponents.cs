@@ -26,7 +26,11 @@ namespace SkillsLabTestFramework
             logBtn.Click();
         }
 
-        public void ClickCloseErrorMessage() => CloseErrorMessage.Click();
+        public void ClickCloseErrorMessage()
+        {
+            System.Threading.Thread.Sleep(2500);
+            CloseErrorMessage.Click();
+        }
 
         public void ClickCloseSuccessMessage() {
             System.Threading.Thread.Sleep(2500);

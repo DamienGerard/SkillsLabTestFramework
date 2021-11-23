@@ -6,9 +6,9 @@ using System.Text;
 
 namespace SkillsLabTestFramework
 {
-    class Create : Navbar, IPage
+    public class StudentCreate : SharedComponents, IPage
     {
-        private static string SubUrl = "Student/RegisterUser";
+        private static string SubUrl = "Student/Create";
 
         public string Url { get; } = $"{Browser.baseUrl}{SubUrl}";
 
@@ -20,7 +20,7 @@ namespace SkillsLabTestFramework
         private IWebElement DOBDatePicker { get; }
         private IWebElement Submit { get; }
 
-        public Create()
+        public StudentCreate()
         {
             var retriever = new Retriever(SubUrl);
             UsernameTextField = retriever.getElement("UsernameTextField");
@@ -28,7 +28,8 @@ namespace SkillsLabTestFramework
             LastNameTextField = retriever.getElement("LastNameTextField");
             PasswordTextField = retriever.getElement("PasswordTextField");
             EmailTextField = retriever.getElement("EmailTextField");
-            Submit = retriever.getElement("CreateBtn");
+            DOBDatePicker = retriever.getElement("DOBDatePicker");
+            Submit = retriever.getElement("Submit");
         }
 
         public void EnterUsername(string username)

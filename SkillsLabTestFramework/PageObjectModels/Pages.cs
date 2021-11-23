@@ -12,11 +12,6 @@ namespace SkillsLabTestFramework
             return page;
         }
 
-        public static RegisterUserPage Register
-        {
-            get { return GetPage<RegisterUserPage>(); }
-        }
-
         public static StudentProfile StudentProfile
         {
             get { return GetPage<StudentProfile>(); }
@@ -35,6 +30,16 @@ namespace SkillsLabTestFramework
         public static LoginPage Login
         {
             get { return GetPage<LoginPage>(); }
+        }
+
+        public static RegisterUserPage RegisterUser
+        {
+            get { return GetPage<RegisterUserPage>(); }
+        }
+
+        public static StudentCreate StudentCreate
+        {
+            get { return GetPage<StudentCreate>(); }
         }
 
 

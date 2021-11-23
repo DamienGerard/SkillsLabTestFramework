@@ -4,7 +4,7 @@ using SkillsLabTestFramework.Elements;
 
 namespace SkillsLabTestFramework
 {
-    public class LoginPage : Navbar, IPage
+    public class LoginPage : SharedComponents, IPage
     {
         private IWebElement usernameTextField { get; }
 

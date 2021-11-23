@@ -19,22 +19,22 @@ namespace SkillsLabSpecFlowProject.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Login", Description="\tCheck if login functionality works", SourceFile="Features\\Login.feature", SourceLine=0)]
-    public partial class LoginFeature
+    [TechTalk.SpecRun.FeatureAttribute("CreateUser", Description="\tCheck if create users functionality works", SourceFile="Features\\CreateUser.feature", SourceLine=0)]
+    public partial class CreateUserFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "CreateUser.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Login", "\tCheck if login functionality works", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "CreateUser", "\tCheck if create users functionality works", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,15 +70,39 @@ namespace SkillsLabSpecFlowProject.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Login user as Administrator", new string[] {
-                "mytag"}, SourceLine=5)]
-        public virtual void LoginUserAsAdministrator()
+        public virtual void FeatureBackground()
+        {
+#line 5
+  #line hidden
+#line 6
+ testRunner.Given("I navigate to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 7
+ testRunner.And("I go to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "UserName",
+                        "Password"});
+            table1.AddRow(new string[] {
+                        "jon",
+                        "jon"});
+#line 8
+ testRunner.And("I enter username and password", ((string)(null)), table1, "And ");
+#line hidden
+#line 11
+ testRunner.When("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Create a student", new string[] {
+                "mytag"}, SourceLine=13)]
+        public virtual void CreateAStudent()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login user as Administrator", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a student", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 14
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -98,26 +122,37 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
- testRunner.Given("I navigate to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 5
+  this.FeatureBackground();
 #line hidden
-#line 8
- testRunner.And("I go to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+ testRunner.Given("I click on Create Users", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+#line 16
+ testRunner.And("I click on Create Student", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "UserName",
-                            "Password"});
-                table3.AddRow(new string[] {
-                            "jon",
-                            "jon"});
-#line 9
- testRunner.And("I enter username and password", ((string)(null)), table3, "And ");
+                            "FirstName",
+                            "LastName",
+                            "Password",
+                            "Email",
+                            "DOB"});
+                table2.AddRow(new string[] {
+                            "josh",
+                            "Joshua",
+                            "Flummers",
+                            "josh",
+                            "joshua.flummers@mail.com",
+                            "01/02/2000"});
+#line 17
+ testRunner.And("I enter student details", ((string)(null)), table2, "And ");
 #line hidden
-#line 12
- testRunner.When("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 20
+ testRunner.When("I click create", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 13
- testRunner.Then("I should see user logged in as admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+ testRunner.Then("I should be on the student profle", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

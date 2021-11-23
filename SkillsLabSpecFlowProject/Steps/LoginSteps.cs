@@ -35,7 +35,8 @@ namespace SkillsLabSpecFlowProject.Features
         [Then(@"I should see user logged in as admin")]
         public void ThenIShouldSeeUserLoggedInAsAdmin()
         {
-            Assert.IsTrue(Browser.webDriver.Url == Pages.AdminProfile.Url);
+            Pages.AdminProfile.ClickCloseSuccessMessage();
+            Assert.IsTrue(Pages.StudentProfile.IsAt());
         }
     }
 }

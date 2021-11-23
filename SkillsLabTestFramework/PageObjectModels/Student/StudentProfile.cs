@@ -3,7 +3,7 @@ using SkillsLabTestFramework.Elements;
 
 namespace SkillsLabTestFramework
 {
-    public class StudentProfile : Navbar, IPage
+    public class StudentProfile : SharedComponents, IPage
     {
         private static string SubUrl = "Student/Index";
 

@@ -3,7 +3,7 @@ using SkillsLabTestFramework.Elements;
 
 namespace SkillsLabTestFramework
 {
-    public class RegisterUserPage : Navbar, IPage
+    public class RegisterUserPage : SharedComponents, IPage
     {
         private IWebElement CreateStudent { get; }
         private IWebElement CreateStaff { get; }

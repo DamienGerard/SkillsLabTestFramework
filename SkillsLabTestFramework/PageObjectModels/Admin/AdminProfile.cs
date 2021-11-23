@@ -4,7 +4,7 @@ using SkillsLabTestFramework.Elements;
 
 namespace SkillsLabTestFramework
 {
-    public class AdminProfile:Navbar, IPage
+    public class AdminProfile:SharedComponents, IPage
     {
         private IWebElement Modify { get; }
         private IWebElement CreateUsers { get; }

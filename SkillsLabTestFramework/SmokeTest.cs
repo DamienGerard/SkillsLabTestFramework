@@ -14,6 +14,7 @@ namespace SkillsLabTestFramework
             Pages.Login.Goto();
             Pages.Login.EnterCredentials("jon", "jon");
             Pages.Login.ClickLogin();
+            Pages.AdminProfile.ClickCloseSuccessMessage();
             Assert.IsTrue(Browser.webDriver.Url == Pages.AdminProfile.Url);
         }
     }

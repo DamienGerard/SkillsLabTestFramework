@@ -1,0 +1,20 @@
+{
+  "logBtn": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "logBtn"
+    }
+  },
+  "CloseErrorMessage": {
+    "Selector": {
+      "Type": "CssSelector",
+      "Name": "#CloseErrorMessage"
+    }
+  },
+  "CloseSuccessMessage": {
+    "Selector": {
+      "Type": "CssSelector",
+      "Name": "#CloseSuccessMessage"
+    }
+  }
+}

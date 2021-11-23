@@ -1,0 +1,20 @@
+{
+  "CreateStudent": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "CreateStudent"
+    }
+  },
+  "CreateStaff": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "CreateStaff"
+    }
+  },
+  "CreateAdmin": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "CreateAdmin"
+    }
+  }
+}

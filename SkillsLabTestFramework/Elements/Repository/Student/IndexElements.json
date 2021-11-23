@@ -1,0 +1,20 @@
+{
+  "ModifyBtn": {
+    "Selector": {
+      "Type": "XPath",
+      "Name": "/html/body/div[1]/p/button[1]"
+    }
+  },
+  "MyCurriculumBtn": {
+    "Selector": {
+      "Type": "XPath",
+      "Name": "/html/body/div[1]/p/button[2]"
+    }
+  },
+  "AssignmentBtn": {
+    "Selector": {
+      "Type": "XPath",
+      "Name": "/html/body/div[1]/p/button[3]"
+    }
+  }
+}

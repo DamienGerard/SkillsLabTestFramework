@@ -1,0 +1,32 @@
+{
+  "Modify": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Modify"
+    }
+  },
+  "CreateUsers": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "CreateUsers"
+    }
+  },
+  "Curriculum": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Curriculum"
+    }
+  },
+  "Programmes": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Programmes"
+    }
+  },
+  "EnrollStudents": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "EnrollStudents"
+    }
+  }
+}

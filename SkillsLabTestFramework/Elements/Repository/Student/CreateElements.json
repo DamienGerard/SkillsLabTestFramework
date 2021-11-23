@@ -1,0 +1,44 @@
+{
+  "UsernameTextField": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Username"
+    }
+  },
+  "FirstNameTextField": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "FirstName"
+    }
+  },
+  "LastNameTextField": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "LastName"
+    }
+  },
+  "PasswordTextField": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Password"
+    }
+  },
+  "EmailTextField": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "Email"
+    }
+  },
+  "DOBDatePicker": {
+    "Selector": {
+      "Type": "Name",
+      "Name": "DOB"
+    }
+  },
+  "Submit": {
+    "Selector": {
+      "Type": "XPath",
+      "Name": "/html/body/div[1]/form/div/div[7]/div/input"
+    }
+  }
+}
